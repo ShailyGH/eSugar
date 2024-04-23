@@ -1,0 +1,23 @@
+{
+  "annotations": {
+    "changelogDate": "20240423143857"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "weight",
+      "fieldType": "Float"
+    }
+  ],
+  "name": "BodyWeight",
+  "relationships": [
+    {
+      "otherEntityName": "userProfile",
+      "otherEntityRelationshipName": "bodyWeight",
+      "relationshipName": "userProfile",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

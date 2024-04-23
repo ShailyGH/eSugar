@@ -1,0 +1,47 @@
+{
+  "annotations": {
+    "changelogDate": "20240423143854"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "isBloodGlucoseShown",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isBloodPressureShown",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isBodyCompositionShown",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isBloodCholesterolShown",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isBodyHeightShown",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isBodyWeightShown",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isCaloriesBurntShown",
+      "fieldType": "String"
+    }
+  ],
+  "name": "ProfileDashboardConfig",
+  "relationships": [
+    {
+      "otherEntityName": "userProfile",
+      "otherEntityRelationshipName": "profileDashboardConfig",
+      "relationshipName": "userProfile",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

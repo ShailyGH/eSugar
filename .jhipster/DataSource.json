@@ -1,0 +1,23 @@
+{
+  "annotations": {
+    "changelogDate": "20240423143859"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "sourceName",
+      "fieldType": "String"
+    }
+  ],
+  "name": "DataSource",
+  "relationships": [
+    {
+      "otherEntityName": "bodyVitalsLog",
+      "otherEntityRelationshipName": "dataSource",
+      "relationshipName": "bodyVitalsLog",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

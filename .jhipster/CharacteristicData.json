@@ -1,0 +1,31 @@
+{
+  "annotations": {
+    "changelogDate": "20240423143853"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "dateOfBirth",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "gender",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bloodType",
+      "fieldType": "String"
+    }
+  ],
+  "name": "CharacteristicData",
+  "relationships": [
+    {
+      "otherEntityName": "userProfile",
+      "otherEntityRelationshipName": "characteristicData",
+      "relationshipName": "userProfile",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

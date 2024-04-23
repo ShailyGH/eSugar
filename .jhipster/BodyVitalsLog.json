@@ -1,0 +1,30 @@
+{
+  "annotations": {
+    "changelogDate": "20240423143856"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "dtCreated",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "name": "BodyVitalsLog",
+  "relationships": [
+    {
+      "otherEntityName": "dataSource",
+      "otherEntityRelationshipName": "bodyVitalsLog",
+      "relationshipName": "dataSource",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "userProfile",
+      "otherEntityRelationshipName": "bodyVitalsLog",
+      "relationshipName": "userProfile",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

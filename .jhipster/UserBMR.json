@@ -1,0 +1,36 @@
+{
+  "annotations": {
+    "changelogDate": "20240423143901"
+  },
+  "applications": "*",
+  "entityTableName": "user_bmr",
+  "fields": [
+    {
+      "fieldName": "idVersion",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "bmr",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "dtCreated",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "dtModified",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "name": "UserBMR",
+  "relationships": [
+    {
+      "otherEntityName": "userProfile",
+      "otherEntityRelationshipName": "userBMR",
+      "relationshipName": "userProfile",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

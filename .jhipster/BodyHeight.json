@@ -1,0 +1,23 @@
+{
+  "annotations": {
+    "changelogDate": "20240423143858"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "height",
+      "fieldType": "Float"
+    }
+  ],
+  "name": "BodyHeight",
+  "relationships": [
+    {
+      "otherEntityName": "userProfile",
+      "otherEntityRelationshipName": "bodyHeight",
+      "relationshipName": "userProfile",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

@@ -1,0 +1,27 @@
+{
+  "annotations": {
+    "changelogDate": "20240423143900"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "activityName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "activityMultiplier",
+      "fieldType": "Float"
+    }
+  ],
+  "name": "Activity",
+  "relationships": [
+    {
+      "otherEntityName": "activityLog",
+      "otherEntityRelationshipName": "activity",
+      "relationshipName": "activityLog",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

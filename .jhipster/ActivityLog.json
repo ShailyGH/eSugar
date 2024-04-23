@@ -1,0 +1,46 @@
+{
+  "annotations": {
+    "changelogDate": "20240423143902"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "startDateTime",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "endDateTime",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "distanceCovered",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "stepsCount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "caloriesBurnt",
+      "fieldType": "Float"
+    }
+  ],
+  "name": "ActivityLog",
+  "relationships": [
+    {
+      "otherEntityName": "activity",
+      "otherEntityRelationshipName": "activityLog",
+      "relationshipName": "activity",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "userProfile",
+      "otherEntityRelationshipName": "activityLog",
+      "relationshipName": "userProfile",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

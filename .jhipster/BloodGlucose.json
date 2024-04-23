@@ -1,0 +1,31 @@
+{
+  "annotations": {
+    "changelogDate": "20240423143855"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "measurement",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "measurementContent",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "measurementType",
+      "fieldType": "String"
+    }
+  ],
+  "name": "BloodGlucose",
+  "relationships": [
+    {
+      "otherEntityName": "userProfile",
+      "otherEntityRelationshipName": "bloodGlucose",
+      "relationshipName": "userProfile",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

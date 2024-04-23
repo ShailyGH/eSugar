@@ -1,11 +1,4 @@
-application {
-  config {
-    baseName eSugar,
-    packageName rocks.zipcode,
-    applicationType monolith,
-    prodDatabaseType mysql,
-  }
-}
+
 entity UserAccount {
     id               Integer,
     loginName        String,

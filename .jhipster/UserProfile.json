@@ -1,0 +1,95 @@
+{
+  "annotations": {
+    "changelogDate": "20240423143852"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "userProfileName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isReportSharingEnabled",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "String"
+    }
+  ],
+  "name": "UserProfile",
+  "relationships": [
+    {
+      "otherEntityName": "characteristicData",
+      "otherEntityRelationshipName": "userProfile",
+      "relationshipName": "characteristicData",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "profileDashboardConfig",
+      "otherEntityRelationshipName": "userProfile",
+      "relationshipName": "profileDashboardConfig",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "bloodGlucose",
+      "otherEntityRelationshipName": "userProfile",
+      "relationshipName": "bloodGlucose",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "bodyVitalsLog",
+      "otherEntityRelationshipName": "userProfile",
+      "relationshipName": "bodyVitalsLog",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "userBMR",
+      "otherEntityRelationshipName": "userProfile",
+      "relationshipName": "userBMR",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "activityLog",
+      "otherEntityRelationshipName": "userProfile",
+      "relationshipName": "activityLog",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "bodyWeight",
+      "otherEntityRelationshipName": "userProfile",
+      "relationshipName": "bodyWeight",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "bodyHeight",
+      "otherEntityRelationshipName": "userProfile",
+      "relationshipName": "bodyHeight",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "userAccount",
+      "otherEntityRelationshipName": "userProfile",
+      "relationshipName": "userAccount",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}
