@@ -50,6 +50,29 @@ public class CacheConfiguration {
             createCache(cm, rocks.zipcode.domain.User.class.getName());
             createCache(cm, rocks.zipcode.domain.Authority.class.getName());
             createCache(cm, rocks.zipcode.domain.User.class.getName() + ".authorities");
+            createCache(cm, rocks.zipcode.domain.UserAccount.class.getName());
+            createCache(cm, rocks.zipcode.domain.UserAccount.class.getName() + ".userProfiles");
+            createCache(cm, rocks.zipcode.domain.UserProfile.class.getName());
+            createCache(cm, rocks.zipcode.domain.UserProfile.class.getName() + ".characteristicData");
+            createCache(cm, rocks.zipcode.domain.UserProfile.class.getName() + ".profileDashboardConfigs");
+            createCache(cm, rocks.zipcode.domain.UserProfile.class.getName() + ".bloodGlucoses");
+            createCache(cm, rocks.zipcode.domain.UserProfile.class.getName() + ".bodyVitalsLogs");
+            createCache(cm, rocks.zipcode.domain.UserProfile.class.getName() + ".userBMRS");
+            createCache(cm, rocks.zipcode.domain.UserProfile.class.getName() + ".activityLogs");
+            createCache(cm, rocks.zipcode.domain.UserProfile.class.getName() + ".bodyWeights");
+            createCache(cm, rocks.zipcode.domain.UserProfile.class.getName() + ".bodyHeights");
+            createCache(cm, rocks.zipcode.domain.CharacteristicData.class.getName());
+            createCache(cm, rocks.zipcode.domain.ProfileDashboardConfig.class.getName());
+            createCache(cm, rocks.zipcode.domain.BloodGlucose.class.getName());
+            createCache(cm, rocks.zipcode.domain.BodyVitalsLog.class.getName());
+            createCache(cm, rocks.zipcode.domain.BodyVitalsLog.class.getName() + ".dataSources");
+            createCache(cm, rocks.zipcode.domain.BodyWeight.class.getName());
+            createCache(cm, rocks.zipcode.domain.BodyHeight.class.getName());
+            createCache(cm, rocks.zipcode.domain.DataSource.class.getName());
+            createCache(cm, rocks.zipcode.domain.Activity.class.getName());
+            createCache(cm, rocks.zipcode.domain.UserBMR.class.getName());
+            createCache(cm, rocks.zipcode.domain.ActivityLog.class.getName());
+            createCache(cm, rocks.zipcode.domain.ActivityLog.class.getName() + ".activities");
             // jhipster-needle-ehcache-add-entry
         };
     }

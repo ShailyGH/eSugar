@@ -17,7 +17,30 @@
     <property name="datetimeType" value="datetime(6)" dbms="mysql"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240423143851_added_entity_UserAccount.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240423143852_added_entity_UserProfile.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240423143853_added_entity_CharacteristicData.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240423143854_added_entity_ProfileDashboardConfig.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240423143855_added_entity_BloodGlucose.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240423143856_added_entity_BodyVitalsLog.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240423143857_added_entity_BodyWeight.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240423143858_added_entity_BodyHeight.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240423143859_added_entity_DataSource.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240423143900_added_entity_Activity.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240423143901_added_entity_UserBMR.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240423143902_added_entity_ActivityLog.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20240423143852_added_entity_constraints_UserProfile.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240423143853_added_entity_constraints_CharacteristicData.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240423143854_added_entity_constraints_ProfileDashboardConfig.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240423143855_added_entity_constraints_BloodGlucose.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240423143856_added_entity_constraints_BodyVitalsLog.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240423143857_added_entity_constraints_BodyWeight.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240423143858_added_entity_constraints_BodyHeight.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240423143859_added_entity_constraints_DataSource.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240423143900_added_entity_constraints_Activity.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240423143901_added_entity_constraints_UserBMR.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240423143902_added_entity_constraints_ActivityLog.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>
