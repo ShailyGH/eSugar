@@ -1,0 +1,96 @@
+application {
+  config {
+    baseName eSugar,
+    packageName rocks.zipcode,
+    applicationType monolith,
+    prodDatabaseType mysql,
+  }
+}
+entity UserAccount {
+    id               Integer,
+    loginName        String,
+    password         String,
+    streetAddress    String,
+    city             String,
+    state            String,
+    country          String,
+    zipcode          String,
+    phoneNumber      Integer,
+    email            String,
+    isActive         Char
+}
+entity UserProfile {
+    id                        Integer,
+    userProfileName           String,
+    email                     String,
+    isReportSharingEnabled    Char,
+    isActive                  Char
+}
+entity CharacteristicData {
+    dateOfBirth          LocalDate,
+    gender               Char,
+    bloodType            Char
+}
+entity ProfileDashboardConfig {
+    isBloodGlucoseShown        Char,
+    isBloodPressureShown       Char,
+    isBodyCompositionShown     Char,
+    isBloodCholesterolShown    Char,
+    isBodyHeightShown          Char,
+    isBodyWeightShown          Char,
+    isCaloriesBurntShown       Char
+}
+entity BloodGlucose {
+    measurement           Float,
+    measurementContent    String,
+    measurementType       String
+}
+entity BodyVitalsLog {
+    dtCreated           ZonedDateTime
+}
+entity BodyWeight {
+    weight                 Float
+}
+entity BodyHeight {
+    height               Float
+}
+entity DataSource {
+    sourceName     String
+}
+entity Activity {
+    activityName          String,
+    activityMultiplier    Float
+}
+entity UserBMR {
+    idVersion             Integer,
+    bmr                   Float,
+    dtCreated             ZonedDateTime,
+    dtModified            ZonedDateTime
+}
+entity ActivityLog {
+    startDateTime         ZonedDateTime,
+    endDateTime           ZonedDateTime,
+    distanceCovered       Float,
+    stepsCount            Integer,
+    caloriesBurnt         Float
+}
+relationship OneToMany {
+    UserAccount{userProfile} to UserProfile{userAccount}
+    UserProfile{characteristicData} to CharacteristicData{userProfile}
+    UserProfile{profileDashboardConfig} to ProfileDashboardConfig{userProfile}
+    UserProfile{bloodGlucose} to BloodGlucose{userProfile}
+    UserProfile{bodyVitalsLog} to BodyVitalsLog{userProfile}
+    UserProfile{userBMR} to UserBMR{userProfile}
+    UserProfile{activityLog} to ActivityLog{userProfile}
+    UserProfile{bodyWeight} to BodyWeight{userProfile}
+    UserProfile{bodyHeight} to BodyHeight{userProfile}
+    BodyVitalsLog{dataSource} to DataSource{bodyVitalsLog}
+    ActivityLog{activity} to Activity{activityLog}
+}
+
+
+
+
+
+
+
